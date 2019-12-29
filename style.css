@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    color: #eee;
+    background-color: #222;
+}
+
+header {
+    padding: .25em;
+    text-align: center;
+    background: crimson;
+    margin-bottom: 3em;
+}
+
+.heroes {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero {
+    position: relative;
+    width: 24%;
+    margin: .5%;
+    border: 2px solid crimson;
+    text-align: center;
+    padding: .5em;
+}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero h2 {
+        background-color: crimson;
+        font-weight: lighter;
+        margin-bottom: .5em;
+    }
+
+    .hero p {
+        margin-top: 1em;
+    }
+
+/* Custom scroll bars style */
+::-webkit-scrollbar {
+    width: 3px;
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: crimson;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: cornflowerblue; 
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+    .hero {
+        margin: 1%;
+        width: 31%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .hero {
+        margin: 1.5%;
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 414px) {
+    html {
+        font-size: 10px;
+    }
+    .hero {
+        margin: 2% 0;
+        width: 97%;
+    }
+}
