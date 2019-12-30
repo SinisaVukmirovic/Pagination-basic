@@ -8,20 +8,26 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
-    color: #eee;
+    color: #ddd;
     background-color: #222;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
-    padding: .25em;
+    width: 100%;
+    padding: .5em;
     text-align: center;
     background: crimson;
-    margin-bottom: 3em;
+    color: #fff;
 }
 
 .heroes {
     width: 85%;
-    margin: 0 auto;
+    margin: 3em auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -37,16 +43,33 @@ header {
     .hero img {
         width: 100%;
         height: auto;
+        padding: .5em .75em 1em;
     }
 
     .hero h2 {
         background-color: crimson;
+        padding: .25em;
+        color: #fff;
         font-weight: lighter;
-        margin-bottom: .5em;
     }
 
     .hero p {
-        margin-top: 1em;
+        text-align: justify;
+    }
+
+.page-numbers button {
+    outline: none;
+    background-color: crimson;
+    border: 3px solid crimson;
+    padding: .25em .75em;
+    margin: 0 .5em;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+    .page-numbers button.active {
+        border: 3px solid #fff;
     }
 
 /* Custom scroll bars style */
