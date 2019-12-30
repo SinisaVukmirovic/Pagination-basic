@@ -149,7 +149,7 @@ function paginationBtn(page, heroes) {
     btn.addEventListener('click', function() {
         currentPage = page;
 
-        displayList(heroes, heroElem, cards, currentPage);
+        displayList(heroes, heroesElem, cards, currentPage);
 
         let currentBtn = document.querySelector('.page-numbers button.active');
         currentBtn.classList.remove('active');

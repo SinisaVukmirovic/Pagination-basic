@@ -39,6 +39,7 @@ header {
     border: 2px solid crimson;
     text-align: center;
     padding: .5em;
+    animation: fadeIn .5s linear;
 }
     .hero img {
         width: 100%;
@@ -67,10 +68,20 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
 }
     .page-numbers button.active {
         border: 3px solid #fff;
     }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 /* Custom scroll bars style */
 ::-webkit-scrollbar {
