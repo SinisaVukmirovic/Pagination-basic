@@ -51,6 +51,10 @@ function paginationBtn(page, heroes) {
     }
 
     btn.addEventListener('click', function() {
+        if (btn.classList.contains('active')) {
+            return;
+        }
+
         currentPage = page;
 
         displayList(heroes, heroesElem, cards, currentPage);
